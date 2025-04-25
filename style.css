@@ -1,0 +1,529 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  background: white;
+  color: #1a1a1a;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px 112px;
+  gap: 10px;
+  width: 100%;
+  height: 80px;
+  max-width: 1440px;
+}
+
+.navbar {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1216px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 26px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -0.7%;
+  color: #475569;
+}
+
+.store-buttons {
+  /* Frame */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+
+  width: 262px;
+  height: 48px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+.store-buttons .light-btn {
+  /* Button */
+
+  box-sizing: border-box;
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 20px;
+  gap: 10px;
+  text-decoration: none;
+  /* width: 99px; */
+  height: 48px;
+  min-height: 48px;
+  letter-spacing: -0.7%;
+  /* Gray/30 */
+  color: #475569;
+  border: 1px solid #cbd5e1;
+  border-radius: 1234px;
+  font-weight: bold;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  font-size: 17px;
+}
+.store-buttons .blue-btn {
+  /* Button */
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* padding: 10px 20px; */
+  gap: 10px;
+  color: #ffffff;
+  width: 99px;
+  height: 48px;
+  min-height: 48px;
+
+  /* Brand/60 */
+  background: #4f46e5;
+  border-radius: 1234px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+/* Lightning */
+
+.small-icon:hover img {
+  background: #888585;
+  height: 100%;
+  width: 100%;
+  padding: 6px;
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+
+.menubar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  transform: translateY(-100%);
+  transition: transform 0.5s ease-in-out;
+  z-index: 999;
+}
+
+.menubar.active {
+  transform: translateY(0%);
+}
+
+.menubar-design {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.menubar-design li {
+  background-color: lightblue;
+  padding: 10px 15px;
+  margin: 5px 0;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+  list-style: none;
+}
+
+.menubar-design li a {
+  color: #475569;
+  text-decoration: none;
+}
+
+.btn-cross-div {
+  display: flex;
+  justify-content: end;
+  padding: 0 20px;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.menubar .cross-btn {
+  font-weight: 900;
+  font-size: 23px;
+  padding: 5px 8px;
+  color: rgb(203, 8, 8);
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.span-div {
+  white-space: nowrap;
+  /* Badge Text */
+  text-align: center;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+  gap: 8px;
+
+  width: 189px;
+  height: 32px;
+
+  /* Brand/5 */
+  background: #eef2ff;
+  border-radius: 1234px;
+}
+.span-div p {
+  /* Text */
+
+  width: 165px;
+  height: 20px;
+
+  /* Text sm/SemiBold */
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+  text-align: center;
+  letter-spacing: -0.006em;
+
+  /* Brand/60 */
+  color: #4f46e5;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.bannerNavbar {
+  background-image: url(/assets/background-wallpaper.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 0;
+  background-color: #645fc0;
+}
+.banner-decription {
+  /* Introducing SlothUI the design system tailored for entrepreneurs who prefer taking it easy Say goodbye to lengthy design processes and hello to efficient development */
+
+  width: 343px;
+  height: 104px;
+
+  /* Paragraph/md */
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  /* or 26px */
+  text-align: center;
+  color: #475569;
+}
+
+/* =====================================    Responsive  =================================== */
+@media (max-width: 767px) {
+  .hero {
+    padding: 12px;
+    height: 72px;
+  }
+  .navbar .nav-links,
+  .store-buttons {
+    display: none;
+  }
+  .banner {
+    border: 2px solid red;
+    margin-bottom: 96px;
+    /* Frame */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 64px 16px;
+    gap: 96px;
+    width: 100%;
+
+    height: 836px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    z-index: 2;
+  }
+  .banner-container {
+    margin-bottom: 48px;
+    border: 2px solid greenyellow;
+    /* Frame */
+    width: 100%;
+    min-width: 343px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+
+    height: 264px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+  .first-half-half {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner-decription {
+    text-align: center;
+  }
+  .banner-text {
+    /* The Worlds Laziest Design System */
+    padding: 20px 0;
+    width: 343px;
+
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 44px;
+    /* or 122% */
+    text-align: center;
+    letter-spacing: -0.014em;
+
+    /* Gray/80 */
+    color: #1e293b;
+
+    /* Inside auto layout */
+    /* flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0; */
+  }
+  .second-half {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 32px;
+    gap: 8px;
+    width: 288.5px;
+    height: 44px;
+  }
+  /* MOCKUP */
+  .mockup-main {
+    min-width: 343px;
+    height: 305px;
+    /* width: 100%; */
+    margin: 0 auto;
+    /* Ensure the container takes full width */
+    overflow: visible;
+    border: 2px solid red;
+    background-image: url(/assets/Desktop.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 768px) {
+  .small-icon {
+    display: none;
+  }
+  .banner {
+    /* width: 800px; */
+    margin: 0 auto;
+    height: 1030px;
+  }
+  .banner-container {
+    border: #4f46e5 2px solid;
+    width: 800px;
+    height: 366px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar .nav-links {
+    display: none;
+  }
+  .navbar .store-buttons {
+    display: none;
+  }
+  .navbar .small-icon {
+    display: block;
+  }
+  .banner-text {
+    font-size: 60px;
+    /* The Worlds Laziest Design System */
+
+    width: 800px;
+    height: 136px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 68px;
+    /* or 113% */
+    text-align: center;
+    letter-spacing: -0.018em;
+
+    /* Gray/80 */
+    color: #1e293b;
+
+    /* Inside auto layout */
+    flex: none;
+
+    align-self: stretch;
+    flex-grow: 0;
+  }
+  .banner-decription {
+    /* Introducing SlothUI the design system tailored for entrepreneurs who prefer taking it easy Say goodbye to lengthy design processes and hello to efficient development */
+
+    width: 800px;
+    height: 58px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    /* or 29px */
+    text-align: center;
+    padding-bottom: 48px;
+    /* Gray/60 */
+    color: #475569;
+  }
+  .second-half {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 48px;
+    gap: 8px;
+
+    height: 44px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+}
+
+@media (min-width: 991px) {
+  .first-half-half {
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .banner {
+    padding: 96px 0;
+    border: #1e293b 2px solid;
+  }
+  .banner-text {
+    font-size: 60px;
+    /* The Worlds Laziest Design System */
+
+    width: 800px;
+    height: 136px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 68px;
+    /* or 113% */
+    text-align: center;
+    letter-spacing: -0.018em;
+
+    /* Gray/80 */
+    color: #1e293b;
+
+    /* Inside auto layout */
+    flex: none;
+
+    align-self: stretch;
+    flex-grow: 0;
+  }
+  .banner-decription {
+    /* Introducing SlothUI the design system tailored for entrepreneurs who prefer taking it easy Say goodbye to lengthy design processes and hello to efficient development */
+
+    width: 800px;
+    height: 58px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    /* or 29px */
+    text-align: center;
+    padding-bottom: 48px;
+    /* Gray/60 */
+    color: #475569;
+  }
+  .second-half {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 67px;
+    gap: 8px;
+
+    height: 44px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+}
