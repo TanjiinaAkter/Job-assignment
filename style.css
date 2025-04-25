@@ -264,6 +264,37 @@ body {
   text-align: center;
   color: #475569;
 }
+/* MOCKUP */
+.mockup-main {
+  position: relative;
+  min-width: 343px;
+  height: 305px;
+  /* width: 100%; */
+  margin: 0 auto;
+  /* Ensure the container takes full width */
+  overflow: visible;
+  border: 2px solid red;
+  background-image: url(/assets/Desktop.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.frame,
+.screen {
+  /* MockUp */
+
+
+  position: absolute;
+  width: 87.02px;
+  height: 177px;
+  right: 35.98px;
+  bottom: 25px;
+  filter: drop-shadow(0px 77.9357px 31.0229px rgba(30, 41, 59, 0.01))
+    drop-shadow(0px 43.8861px 26.1047px rgba(30, 41, 59, 0.05))
+    drop-shadow(0px 19.2948px 19.2948px rgba(30, 41, 59, 0.09))
+    drop-shadow(0px 4.91827px 10.5932px rgba(30, 41, 59, 0.1));
+}
+
 
 /* =====================================    Responsive  =================================== */
 @media (max-width: 767px) {
@@ -389,6 +420,34 @@ body {
     height: 366px;
     margin: 0 auto;
   }
+  .mockup-main {
+    /* Frame */
+    position: relative;
+    border: #46e576 2px solid;
+    width: 1008px;
+    height: 600px;
+    margin: 0 auto;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+  .desktop {
+    /* Desktop-min 1 */
+
+
+    position: absolute;
+    width: 800px;
+    height: 533.33px;
+    left: 22px;
+    top: 0px;
+
+
+    background: url(/assets/desktop.png);
+    /* Gray/20 */
+   
+  }
+
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .navbar {
