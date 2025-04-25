@@ -17,6 +17,7 @@ body {
   color: #1a1a1a;
   max-width: 1440px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .hero {
@@ -240,13 +241,12 @@ body {
   flex-grow: 0;
 }
 .bannerNavbar {
-  background-image: url(/assets/background-wallpaper.png);
+  background-image: url(/assets/bg-1.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  padding: 0;
-  background-color: #645fc0;
+  padding: 0 0 96px 0;
 }
 .banner-decription {
   /* Introducing SlothUI the design system tailored for entrepreneurs who prefer taking it easy Say goodbye to lengthy design processes and hello to efficient development */
@@ -283,7 +283,6 @@ body {
 .screen {
   /* MockUp */
 
-
   position: absolute;
   width: 87.02px;
   height: 177px;
@@ -294,8 +293,9 @@ body {
     drop-shadow(0px 19.2948px 19.2948px rgba(30, 41, 59, 0.09))
     drop-shadow(0px 4.91827px 10.5932px rgba(30, 41, 59, 0.1));
 }
-
-
+.desktop-large {
+  display: none;
+}
 /* =====================================    Responsive  =================================== */
 @media (max-width: 767px) {
   .hero {
@@ -420,34 +420,6 @@ body {
     height: 366px;
     margin: 0 auto;
   }
-  .mockup-main {
-    /* Frame */
-    position: relative;
-    border: #46e576 2px solid;
-    width: 1008px;
-    height: 600px;
-    margin: 0 auto;
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-  }
-  .desktop {
-    /* Desktop-min 1 */
-
-
-    position: absolute;
-    width: 800px;
-    height: 533.33px;
-    left: 22px;
-    top: 0px;
-
-
-    background: url(/assets/desktop.png);
-    /* Gray/20 */
-   
-  }
-
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .navbar {
@@ -517,6 +489,55 @@ body {
     order: 1;
     flex-grow: 0;
   }
+  .mockup-main {
+    /* Frame */
+    position: relative;
+    border: #46e576 2px solid;
+    width: 1008px;
+    height: 600px;
+    margin: 0 auto;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    background-image: none;
+    margin-top: 64px;
+  }
+  .desktop-large {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -81px;
+    width: 800px;
+    height: 533.33;
+  }
+  .desktop {
+    display: none;
+  }
+  .frame {
+    /* MockUp */
+    position: absolute;
+    width: 397px;
+    height: 100%;
+    left: calc(22% - 230px / 2 + 367px);
+    bottom: -110.85px;
+    filter: drop-shadow(0px 206px 82px rgba(30, 41, 59, 0.01))
+      drop-shadow(0px 116px 69px rgba(30, 41, 59, 0.05))
+      drop-shadow(0px 51px 51px rgba(30, 41, 59, 0.09))
+      drop-shadow(0px 13px 28px rgba(30, 41, 59, 0.1));
+  }
+  .screen {
+    /* Screen */
+    width: 215px;
+    height: 469.24px;
+    position: absolute;
+    left: calc(31% - 230px / 2 + 367px);
+    bottom: -7.85px;
+    filter: drop-shadow(0px 206px 82px rgba(30, 41, 59, 0.01))
+      drop-shadow(0px 116px 69px rgba(30, 41, 59, 0.05))
+      drop-shadow(0px 51px 51px rgba(30, 41, 59, 0.09))
+      drop-shadow(0px 13px 28px rgba(30, 41, 59, 0.1));
+  }
 }
 
 @media (min-width: 991px) {
@@ -584,5 +605,60 @@ body {
     flex: none;
     order: 1;
     flex-grow: 0;
+  }
+  .mockup-main {
+    /* Frame */
+    position: relative;
+    border: #46e576 2px solid;
+    width: 1008px;
+    height: 600px;
+    margin: 0 auto;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    background-image: none;
+    margin-top: 64px;
+  }
+  .desktop-large {
+    display: block;
+    position: absolute;
+    top: -27px;
+    left: -141px;
+    /* width: 800px; */
+    height: 533.33;
+  }
+  .desktop {
+    display: none;
+  }
+  .frame {
+    /* MockUp */
+    position: absolute;
+    width: 397px;
+    height: 100%;
+    left: calc(40% - 230px / 2 + 367px);
+    bottom: -110.85px;
+    filter: drop-shadow(0px 206px 82px rgba(30, 41, 59, 0.01))
+      drop-shadow(0px 116px 69px rgba(30, 41, 59, 0.05))
+      drop-shadow(0px 51px 51px rgba(30, 41, 59, 0.09))
+      drop-shadow(0px 13px 28px rgba(30, 41, 59, 0.1));
+  }
+  .screen {
+    /* Screen */
+    width: 215px;
+    height: 469.24px;
+    position: absolute;
+    left: calc(49% - 230px / 2 + 367px);
+    bottom: -7.85px;
+    filter: drop-shadow(0px 206px 82px rgba(30, 41, 59, 0.01))
+      drop-shadow(0px 116px 69px rgba(30, 41, 59, 0.05))
+      drop-shadow(0px 51px 51px rgba(30, 41, 59, 0.09))
+      drop-shadow(0px 13px 28px rgba(30, 41, 59, 0.1));
+  }
+  .bla {
+    margin-top: 96px;
+  }
+  .bannerNavbar {
+    height: 1304px;
   }
 }
