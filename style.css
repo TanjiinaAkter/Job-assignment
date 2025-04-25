@@ -296,6 +296,8 @@ body {
 .desktop-large {
   display: none;
 }
+/* ===================================== PRIMARY FEATURES   Responsive  =================================== */
+
 /* =====================================    Responsive  =================================== */
 
 @media (min-width: 768px) {
@@ -314,7 +316,7 @@ body {
     margin: 0 auto;
   }
 }
-
+/* ==================  SMALL DEVICE ================= */
 @media (max-width: 767px) {
   .hero {
     padding: 12px;
@@ -456,6 +458,228 @@ body {
     width: calc((100% - 64px) / 3); /* 3 items with 32px gap between them */
     text-align: center;
   }
+  /* FEATURE SECTION */
+  .feature-section {
+    /* Features Section */
+    /* Auto layout */
+    border: #4f46e5 2px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 16px;
+    gap: 48px;
+    width: 100%;
+    min-width: 375px;
+    /* height: 1778px; */
+
+    /* Gray/0 (White) */
+    background: #ffffff;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+  }
+  .primary-feature {
+    /* Frame */
+    border: #4f46e5 2px solid;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+    width: 100%;
+    min-width: 343px;
+    max-width: 800px;
+    height: 226px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+  .primary-feature h2 {
+    /* The worlds first lazy efficient design system */
+    /* 
+    width: 343px; */
+    height: 38px;
+
+    /* Heading sm/ExtraBold */
+
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 38px;
+    /* identical to box height, or 127% */
+    text-align: center;
+    letter-spacing: -0.013em;
+
+    /* Gray/80 */
+    color: #1e293b;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+  .primary-feature p {
+    /* Introducing SlothUI the design system tailored for entrepreneurs who prefer taking it easy Say goodbye to lengthy design processes right now */
+
+    /* width: 343px; */
+    height: 116px;
+
+    /* Paragraph/lg */
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    /* or 29px */
+    text-align: center;
+
+    /* Gray/60 */
+    color: #475569;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+  .features-box {
+    /* Frame */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+
+    /* width: 343px; */
+    height: 1376px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+  .main-features {
+    /* Badge Text */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 12px;
+    gap: 8px;
+
+    width: 145px;
+    height: 32px;
+
+    /* Brand/5 */
+    background: #eef2ff;
+    border-radius: 1234px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  .main-features p {
+    /* Frame */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 6px;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    width: 121px;
+    height: 20px;
+    color: #4f46e5;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .info-block {
+    /* _FeatureListItem */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+
+    text-align: center;
+    height: 220px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+  .info-block h3 {
+    /* Text */
+
+    /* width: 343px; */
+    height: 24px;
+
+    /* Text lg/Bold */
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height, or 133% */
+    text-align: center;
+    letter-spacing: -0.008em;
+
+    /* Gray/80 */
+    color: #1e293b;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+  .info-block p {
+    /* Supporting text */
+
+    /* width: 343px; */
+    height: 104px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    /* or 26px */
+    text-align: center;
+
+    /* Gray/60 */
+    color: #475569;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+  .info-block img {
+    width: 64px;
+    height: 64px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -584,6 +808,136 @@ body {
   .img-div {
     width: calc((100% - 64px) / 3); /* 3 items with 32px gap between them */
     text-align: center;
+  }
+  .feature-section {
+    /* Features Section */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 96px 112px;
+    gap: 64px;
+
+    /* width: 1440px; */
+    height: 920px;
+
+    /* Gray/0 (White) */
+    background: #ffffff;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+  }
+  .primary-feature {
+    /* Frame */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+    margin: 0 auto;
+    width: 600px;
+    /* max-width: 800px; */
+    height: 188px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+  .main-features {
+    /* Badge Text */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 12px;
+    gap: 8px;
+
+    width: 145px;
+    height: 32px;
+
+    /* Brand/5 */
+    background: #eef2ff;
+    border-radius: 1234px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  .main-features p {
+    /* Frame */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 6px;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    width: 121px;
+    height: 20px;
+    color: #4f46e5;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  .primary-feature h2 {
+    /* The worlds first lazy efficient design system */
+
+    width: 799px;
+    height: 44px;
+
+    /* Heading md/ExtraBold */
+
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 44px;
+    /* identical to box height, or 122% */
+    text-align: center;
+    letter-spacing: -0.014em;
+
+    /* Gray/80 */
+    color: #1e293b;
+
+    /* Inside auto layout */
+  }
+  .primary-feature .primary {
+    /* Introducing SlothUI the design system tailored for entrepreneurs who prefer taking it easy Say goodbye to lengthy design processes right now */
+    margin: auto;
+    width: 600px;
+    height: 64px;
+
+    /* Paragraph/xl */
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    /* or 32px */
+    text-align: center;
+
+    /* Gray/60 */
+    color: #475569;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
   }
 }
 
@@ -742,5 +1096,220 @@ body {
     height: 96px;
     width: 144px;
     object-fit: cover;
+  }
+  .feature-section {
+    /* Features Section */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 96px 112px;
+    gap: 64px;
+
+    /* width: 1440px; */
+    height: 920px;
+
+    /* Gray/0 (White) */
+    background: #ffffff;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+  }
+  .primary-feature {
+    /* Frame */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+    margin: 0 auto;
+    /* width: 800px; */
+    /* max-width: 800px; */
+    height: 188px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+  .main-features {
+    /* Badge Text */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 12px;
+    gap: 8px;
+
+    width: 145px;
+    height: 32px;
+
+    /* Brand/5 */
+    background: #eef2ff;
+    border-radius: 1234px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  .main-features p {
+    /* Frame */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 6px;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    width: 121px;
+    height: 20px;
+    color: #4f46e5;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  .primary-feature h2 {
+    /* The worlds first lazy efficient design system */
+
+    width: 799px;
+    height: 44px;
+
+    /* Heading md/ExtraBold */
+
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 44px;
+    /* identical to box height, or 122% */
+    text-align: center;
+    letter-spacing: -0.014em;
+
+    /* Gray/80 */
+    color: #1e293b;
+
+    /* Inside auto layout */
+  }
+  .primary-feature .primary {
+    /* Introducing SlothUI the design system tailored for entrepreneurs who prefer taking it easy Say goodbye to lengthy design processes right now */
+
+    width: 800px;
+    height: 64px;
+
+    /* Paragraph/xl */
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    /* or 32px */
+    text-align: center;
+
+    /* Gray/60 */
+    color: #475569;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+  .features-box {
+    /* Frame */
+    border: 2px solid red;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+
+    height: 476px;
+    text-align: center;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+  .info-block {
+    width: calc((100% - 2 * 32px) / 3);
+    /* _FeatureListItem */
+
+    /* Auto layout */
+
+    padding: 0px;
+    gap: 20px;
+
+    /* width: 384px;
+    height: 214px; */
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+  }
+  .info-block p {
+    padding: 20px 0px;
+    /* Supporting text */
+
+    /* width: 384px;
+    height: 78px; */
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    /* or 26px */
+    text-align: center;
+
+    /* Gray/60 */
+    color: #475569;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+  .info-block img {
+    padding-bottom: 20px;
+  }
+  .info-block h3 {
+    /* Text */
+
+    /* width: 384px;
+    height: 28px; */
+
+    /* Text xl/Bold */
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    /* identical to box height, or 140% */
+    text-align: center;
+    letter-spacing: -0.01em;
+
+    /* Gray/80 */
+    color: #1e293b;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
   }
 }
