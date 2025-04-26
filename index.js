@@ -13,3 +13,14 @@ if (crossBtn && navLinks) {
     navLinks.classList.remove("active");
   });
 }
+
+// What the procrastinators say
+
+const leftBox = document.querySelectorAll(".left-box");
+leftBox.forEach((box) => {
+  box.addEventListener("click", () => {
+    leftBox.forEach((b) => b.classList.remove("active"));
+
+    box.classList.add("active");
+  });
+});
