@@ -315,6 +315,7 @@ body {
     height: 366px;
     margin: 0 auto;
   }
+
 }
 /* ==================  SMALL DEVICE ================= */
 @media (max-width: 767px) {
@@ -680,6 +681,176 @@ body {
     width: 64px;
     height: 64px;
   }
+  .statistics-section {
+    /* Statistics Section */
+    border: 2px solid red;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 16px;
+    gap: 64px;
+    width: 100%;
+    min-width: 375px;
+    height: 916px;
+
+    /* Gray/5 */
+    background: #f8fafc;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+  }
+  .statistics-container {
+    /* Frame */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 64px;
+    width: 100%;
+    min-width: 343px;
+    max-width: 800px;
+    height: 788px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+  .stat-texts {
+    border: 2px solid blue;
+    /* Frame */
+    padding-top: 64px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 16px;
+    width: 100%;
+    /* width: 343px; */
+    height: 272px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+  .stat-texts h2 {
+    /* Work lazily and achieve the result you want */
+
+    /* width: 343px; */
+    height: 76px;
+
+    /* Heading sm/ExtraBold */
+
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 38px;
+    /* or 127% */
+    text-align: center;
+    letter-spacing: -0.013em;
+
+    /* Gray/80 */
+    color: #1e293b;
+  }
+  .stat-texts p {
+    /* Forget about the x efficiency We welcome you the next era of productive laziness */
+    width: 100%;
+    min-width: 343px;
+    height: 116px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    /* or 29px */
+    text-align: center;
+
+    /* Gray/60 */
+    color: #475569;
+  }
+  .stats-infocontainer {
+    /* Frame */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 64px;
+    gap: 32px;
+    /* width: 100%;
+    min-width: 343px;
+    height: 452px; */
+  }
+  .stats-info {
+    /* _CTASectionNumber */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+
+    width: 343px;
+    height: 108px;
+  }
+  .stats-info h1 {
+    /* 420% */
+
+    /* width: 343px; */
+    height: 68px;
+
+    /* Heading xl/Bold */
+
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 68px;
+    /* identical to box height, or 113% */
+    text-align: center;
+    letter-spacing: -0.018em;
+    /* Brand/60 */
+    color: #4f46e5;
+  }
+  .stats-info h4 {
+    /* width: 343px; */
+    height: 24px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height, or 133% */
+    text-align: center;
+    letter-spacing: -0.008em;
+
+    /* Gray/60 */
+    color: #475569;
+  }
+  .stats-info hr {
+    /* Vector */
+
+    width: 343px;
+    height: 0px;
+
+    /* Gray/30 */
+    border: 1px solid #cbd5e1;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+  .divider {
+    width: 100%;
+    /* height: 108px; */
+    border: 1px solid #cbd5e1;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -938,6 +1109,65 @@ body {
     order: 2;
     align-self: stretch;
     flex-grow: 0;
+  }
+  .statistics-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 96px 112px;
+    gap: 64px;
+    margin-top: 270px;
+    height: 920px;
+  }
+  .statistics-container {
+    text-align: center;
+    border: 2px solid yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 64px;
+
+    width: 100%;
+    max-width: 800px;
+    height: 376px;
+  }
+  .stat-texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    align-items: center;
+  }
+  .stat-texts img {
+    height: 64px;
+    width: 64px;
+  }
+  .stats-infocontainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+  }
+  .stats-info {
+    width: 100%;
+  }
+  .stats-info h1 {
+    width: 100%;
+    height: 68px;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 68px;
+    text-align: center;
+    letter-spacing: -0.018em;
+    color: #4f46e5;
+  }
+  .stat-texts h2 {
+    font-size: 30px;
+  }
+  .stat-texts p {
+    font-size: 18px;
   }
 }
 
@@ -1311,5 +1541,154 @@ body {
     order: 0;
     align-self: stretch;
     flex-grow: 0;
+  }
+
+  /* STATISTICS SECTION  */
+  .statistics-section {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 96px 112px;
+    gap: 64px;
+    width: 100%;
+    max-width: 1440px;
+    height: 568px;
+
+    /* Gray/5 */
+    background: #f8fafc;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+  }
+  .statistics-container {
+    /* Frame */
+    /* border: 2px solid red; */
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 64px;
+
+    width: 100%;
+    max-width: 800px;
+    height: 376px;
+  }
+  .stat-texts {
+    /* Frame */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+
+    width: 800px;
+    height: 204px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+  .stat-texts img {
+    height: 56px;
+    width: 56px;
+  }
+  .stat-texts h2 {
+    /* Work lazily and achieve the result you want */
+
+    /* width: 800px;
+    height: 44px; */
+
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 44px;
+    /* identical to box height, or 122% */
+    text-align: center;
+    letter-spacing: -0.014em;
+
+    /* Gray/80 */
+    color: #1e293b;
+  }
+  .stat-texts p {
+    /* Forget about the x efficiency We welcome you the next era of productive laziness */
+
+    /* width: 800px; */
+    height: 64px;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    /* or 32px */
+    text-align: center;
+
+    /* Gray/60 */
+    color: #475569;
+  }
+  .stats-infocontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+
+    width: 800px;
+    height: 108px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+  .stat-texts {
+    /* _CTASectionNumber */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+
+    /* width: 245.33px; */
+    height: 108px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+  }
+  .stats-info h1 {
+    width: 245.33px;
+    height: 68px;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 68px;
+    text-align: center;
+    letter-spacing: -0.018em;
+    color: #4f46e5;
+  }
+  .divider {
+    width: 0px;
+    height: 108px;
+    border: 1px solid #cbd5e1;
+  }
+  .stats-info h4 {
+    width: 245.33px;
+    height: 24px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.008em;
+    color: #475569;
+    padding-top: 26px;
   }
 }
