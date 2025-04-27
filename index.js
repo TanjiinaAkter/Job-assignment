@@ -101,11 +101,11 @@ headers.forEach((header) => {
   });
 });
 
-///// SCROLL TO TOP
+
 // Get the scroll-to-top button
 const scrollToTopButton = document.querySelector(".circle-bottom ");
 
-// Show the button when the user scrolls down 200px
+// Show the button when the user scrolls down 
 window.onscroll = function () {
   if (
     document.body.scrollTop > 200 ||
