@@ -100,3 +100,27 @@ headers.forEach((header) => {
     }
   });
 });
+
+///// SCROLL TO TOP
+// Get the scroll-to-top button
+const scrollToTopButton = document.querySelector(".circle-bottom ");
+
+// Show the button when the user scrolls down 200px
+window.onscroll = function () {
+  if (
+    document.body.scrollTop > 200 ||
+    document.documentElement.scrollTop > 200
+  ) {
+    scrollToTopButton.style.display = "block";
+  } else {
+    scrollToTopButton.style.display = "none";
+  }
+};
+
+// Scroll to the top when the button is clicked
+scrollToTopButton.onclick = function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
