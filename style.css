@@ -1030,7 +1030,7 @@ height: 76px; */
     height: 305px;
     margin: 0 auto;
     overflow: visible;
-    background-image: url(/assets/Desktop.png);
+    background-image: url(/assets/desktop.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
